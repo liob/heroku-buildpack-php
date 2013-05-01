@@ -46,10 +46,10 @@ cp $LP_DIR/conf/php.ini php
 mkdir -p bin
 ln -s /app/php/bin/php bin/php
 
-mkdir -p /app/var/lib/z-push
-chmod 777 /app/var/lib/z-push
-mkdir -p /app/var/log/z-push
-chmod 777 /app/var/log/z-push
+mkdir -p var/lib/z-push
+chmod 777 var/lib/z-push
+mkdir -p var/log/z-push
+chmod 777 var/log/z-push
 
 
 cat >>boot.sh <<EOF
