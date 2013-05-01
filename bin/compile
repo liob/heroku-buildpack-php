@@ -52,6 +52,10 @@ for var in \`env|cut -f1 -d=\`; do
 done
 touch /app/apache/logs/error_log
 touch /app/apache/logs/access_log
+mkdir -p /app/var/lib/z-push
+chmod 777 /app/var/lib/z-push
+mkdir -p /app/var/log/z-push
+chmod 777 /app/var/log/z-push
 tail -F /app/apache/logs/error_log &
 tail -F /app/apache/logs/access_log &
 export LD_LIBRARY_PATH=/app/php/ext
